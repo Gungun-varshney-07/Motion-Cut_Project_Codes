@@ -1,0 +1,105 @@
+*{
+    background-color: #fcfde7;
+}
+
+h1{
+    text-align: center;
+    font-size: 45px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-address{
+    display: flex;
+}
+
+h3{
+    padding: 10px;
+}
+
+#delivery-add{
+    margin: 20px;
+    padding: 10px;
+    width: 510px;
+    border-radius: 5px;
+}
+
+#delivery-add:focus,
+#pincode-number:focus,
+#upi-id:focus{
+    box-shadow: 3px 3px 5px rgba(183, 39, 39, 0.5);
+}
+
+#pincode-number{
+    margin: 20px;
+    padding: 10px;
+    width: 210px;
+    border-radius: 5px;
+}
+
+.payment-methods{
+    display: flex;
+}
+
+.payment-options{
+    margin: 20px 20px;
+    font-weight: bold;
+}
+
+.option-2{
+    margin-top: 7px;
+}
+
+span{
+    margin-left: 31px;
+    font-weight: normal;
+}
+
+input[type="radio"]{
+    margin: 7px;
+    cursor: pointer;
+}
+
+.btn{
+    max-width: 150px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #e59797;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.btn:disabled{
+    color: #fff;
+    cursor: not-allowed;
+}
+
+.btn:enabled{
+    cursor: pointer;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn:hover{
+    background-color: #e37878;
+}
+
+#result{
+    font-weight: normal;
+    padding: 3px;
+}
+
+#result span{
+    margin: 10px;
+    margin-left: 25px;
+}
+
+#result #upi-id{
+    margin: 10px;
+    padding: 5px;
+    margin-left: 25px;
+    border-radius: 5px;
+}
