@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="checkout-style.css">
+</head>
+<body>
+
+    <h1>Checkout</h1>
+
+    <div id="upi" class="container">
+    <form id="del-text">
+
+        <div class="delivery-address">
+            <h3 id="delivery">Delivery Address</h3>
+            <input type="text" id="delivery-add" placeholder="Enter your address" required>    
+            <h3 id="pincode">Pincode</h3>
+            <input type="text" id="pincode-number" placeholder="Enter pincode">
+        </div>
+
+        <div class="payment-methods">
+            <h3 id="option">Select a payment method</h3>
+            <div class="payment-options">
+
+                <div class="option-1">
+                    <input type="radio" id="payment-opt1" name="payment-option" required>
+                    <label for="payment-opt1">Cash on Delivery/Pay on Delivery</label><br>
+                    <span>Cash, UPI and Cards accepted.</span>
+                </div>
+                <div class="option-2">
+                    <input type="radio" id="payment-opt2" name="payment-option" value="upi-apps" onclick= "displayMessage()" required>
+                    <label for="payment-opt2">UPI Apps</label>
+                    <div id="result"></div>
+                </div>
+
+            </div>
+        </div>
+        
+        <button id="orderBtn" class="btn" onclick="thanksPage()" disabled>Place Your Order</button>
+
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
